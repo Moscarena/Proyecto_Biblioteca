@@ -1,0 +1,126 @@
+/* Estilos CSS para hacer que la página sea más atractiva para los niños */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../img/yuriy-kovalev-nN1HSDtKdlw-unsplash2.jpg");
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("../img/0010.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    padding: 5% 10%; /* Ajusta el relleno según sea necesario */
+    height: 200px; /* Ajusta la altura según sea necesario */
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 150px; /* Ajusta la altura para dispositivos móviles */
+        padding: 3% 5%; /* Ajusta el relleno para dispositivos móviles */
+    }
+}
+
+nav {
+    background-color: #571ae4;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+button {
+    width: calc(50% - 22%);
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating-label {
+    font-weight: bold;
+    font-size: 1.1em;
+    /* Ajusta el tamaño de la fuente según tu preferencia */
+}
+
+.star {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.star.active,
+.star:hover {
+    color: #eba50f;
+    /* Cambia el color según lo deseado */
+}
+
+#opinion-container {
+    margin-top: 25px;
+    /* Ajusta el espacio entre el contenedor de estrellas y el contenedor de comentarios */
+}
+
+#opinion {
+    width: 50%;
+    /* Ajusta el ancho del textarea */
+    padding: 10px;
+    /* Ajusta el espacio interno del textarea */
+    font-size: 16px;
+    /* Ajusta el tamaño de la fuente según tu preferencia */
+    border: 2px solid #571ae4;
+    /* Ajusta el estilo del borde */
+    border-radius: 5px;
+    /* Ajusta el radio del borde */
+}
+
+button#submit-opinion {
+    margin-top: 25px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    /* Ajusta el espacio interno del botón */
+    border: none;
+    /* Elimina el borde del botón */
+    border-radius: 5px;
+    /* Ajusta el radio del borde del botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+}
+
+#submit-opinion:hover {
+    background-color: #555;
+    /* Cambia el color de fondo del botón al pasar el ratón sobre él */
+}
+
+#thank-you-message {
+    display: none;
+    /* El mensaje de agradecimiento está oculto inicialmente */
+    font-weight: bold;
+    font-size: 1.1em;
+    /* Ajusta el tamaño de la fuente según tu preferencia */
+}
