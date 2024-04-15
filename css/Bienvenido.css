@@ -1,0 +1,44 @@
+
+
+.card img {
+    max-width: 100%;
+    height: auto; /* Cambiado a 'auto' para mantener la proporción de la imagen */
+    transition: transform 0.3s ease;
+    align-self: center;
+}
+.card img:hover {
+    transform: scale(1.1);
+    /* Aumentar el tamaño de la imagen */
+    border: 2px solid dimgray;
+}    
+
+.con-borde {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+    padding: 0%;
+    border-radius: 0% !important;
+}
+
+.card-footer {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.btn-custom {
+    border: 2px solid transparent; /* Borde inicial transparente */
+    transition: transform 0.3s, border-color 0.3s; /* Transición suave */
+}
+
+.btn-custom:hover {
+    transform: scale(1.1); /* Escalado al hacer hover o enfocar */
+    border-color: rgba(51, 51, 51, 0); /* Borde transparente al hacer hover o enfocar */ 
+    font-weight:bold; /* Hacer la letra negrita al hacer hover o enfocar */
+    font-variant: small-caps;
+}
+
+#login {
+    justify-content: center;
+    align-items: stretch;
+    height: min-content;
+}
+

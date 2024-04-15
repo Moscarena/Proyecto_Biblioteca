@@ -1,0 +1,106 @@
+/* Estilos CSS para hacer que la página sea más atractiva para los niños */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../img/yuriy-kovalev-nN1HSDtKdlw-unsplash2.jpg");
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("../img/0010.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    padding: 5% 10%;
+    /* Ajusta el relleno según sea necesario */
+    height: 200px;
+    /* Ajusta la altura según sea necesario */
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 150px;
+        /* Ajusta la altura para dispositivos móviles */
+        padding: 3% 5%;
+        /* Ajusta el relleno para dispositivos móviles */
+    }
+}
+
+nav {
+    background-color: #571ae4;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: rgba(255, 255, 255, 0.568);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-image: #ddd;
+    color: white;
+    font-size: large;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    /* Cambiado a 'auto' para mantener la proporción de la imagen */
+    transition: transform 0.3s ease;
+    align-self: center;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+    /* Aumentar el tamaño de la imagen */
+    border: 2px solid dimgray;
+}
+
+section {
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.registro {
+    text-align: center;
+}
+
+.imagen-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+/*#imagen-pasillo:hover {
+    content: url('../img/vecteezy_vector-poster-of-magic-books-in-library_14343440.jpg');
+  
+}*/
+
+.imagen-logo {
+    transition: ease-in;
+}
+
+.imagen-logo:hover {
+    transform: scale(1.1);
+}
+
+button {
+    width: calc(50% - 22%);
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
